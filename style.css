@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lexend Deca";
+  color: white;
+}
+
+body {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  min-height: 100vh;
+  font-size: 15px;
+  padding: 0 20px;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0px;
+}
+
+.container p {
+  margin-bottom: auto;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 35px;
+  justify-content: space-between;
+  max-width: 250px;
+}
+.container img {
+  width: 50px;
+}
+.container h3 {
+  font-family: "Big Shoulders Display";
+}
+.first {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.second {
+  background-color: hsl(184, 100%, 22%);
+}
+.third {
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.container button {
+  border: 1px solid white;
+  background-color: white;
+  max-width: 100px;
+  border-radius: 20px;
+  padding: 5px 0;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.btn_sed {
+  color: hsl(31, 77%, 52%);
+}
+.btn_suv {
+  color: hsl(184, 100%, 22%);
+}
+
+.btn_lux {
+  color: hsl(179, 100%, 13%);
+}
+
+.container button:hover {
+  background-color: transparent;
+  color: white;
+}
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: 100%;
+  }
+  .first {
+    border-radius: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .third {
+    border-radius: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}
